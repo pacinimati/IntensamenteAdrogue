@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+</head>
+
+<header>
+    <div class="container">
+        <img src="{{ url_for('static', filename='media/logo.jpeg') }}" alt="Logo MercadoLibreGuitar" class="logo-img">
+         <nav>
+            <a href="{{ url_for('home') }}">Inicio</a>
+            <a href="{{ url_for('galeria') }}">Galeria</a>
+            <!--<a href="{{ url_for('profesionales') }}">Profesionales</a>-->
+            <a href="https://wa.me/5491122605695?text=Hola%2C%20quiero%20sacar%20un%20turno">Nuestro WhatsApp</a>
+         </nav>
+    </div>
+</header>
+
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+
+</html>

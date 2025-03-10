@@ -1,0 +1,39 @@
+{% extends './layout.html' %}
+
+{% block title %}Galeria{% endblock %}
+
+{% block body %}
+<section id="galeria">
+    <div class="container">
+        <br><br>
+        <h1>Fotos de nuestro centro</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='media/centro1.png') }}" alt="Imagen 1">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='media/centro2.jpeg') }}" alt="Imagen 2">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='media/i1.jpg') }}" alt="Imagen 3">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='media/i1.jpg') }}" alt="Imagen 4">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='media/i1.jpg') }}" alt="Imagen 1">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='media/i1.jpg') }}" alt="Imagen 1">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='media/i1.jpg') }}" alt="Imagen 1">
+            </div>
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='media/i1.jpg') }}" alt="Imagen 1">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
