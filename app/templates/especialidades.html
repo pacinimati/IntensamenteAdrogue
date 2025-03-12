@@ -1,0 +1,61 @@
+{% extends './layout.html' %}
+
+{% block title %}Profesionales{% endblock %}
+
+{% block body %}
+<section id="profesionales">
+    <div class="container">
+        <h1>Nuestras Especialidades</h1>
+
+        <div class="profesional">
+            <img src="{{ url_for('static', filename='media/psiquiatria.jpg') }}" alt="Profesional 1">
+            <div class="info">
+                <h2>Psiquiatría infanto juvenil</h2>
+                <p>El psiquiatra infanto juvenil es un médico especializado en el diagnóstico y tratamiento de los trastornos mentales en niños y adolescentes. </p>
+            </div>
+        </div>
+
+        <div class="profesional">
+            <img src="{{ url_for('static', filename='media/psicologia.jpg') }}" alt="Profesional 1">
+            <div class="info">
+                <h2>Neurologia Infantil</h2>
+                <p>La neurología infantil es una especialidad médica que se encarga del diagnóstico y tratamiento de las enfermedades del sistema nervioso central, periférico y autónomo en niños.  </p>
+            </div>
+        </div>
+
+        <div class="profesional">
+            <img src="{{ url_for('static', filename='media/psicologiaa.jpg') }}" alt="Profesional 1">
+            <div class="info">
+                <h2>Psicología TCC</h2>
+                <p>La terapia cognitivo-conductual (TCC) es un tipo de tratamiento psicológico que se centra en la modificación de patrones de pensamiento y conducta disfuncionales. </p>
+            </div>
+        </div>
+        
+        <div class="profesional">
+            <img src="{{ url_for('static', filename='media/psicopedagogia.jpg') }}" alt="Profesional 1">
+            <div class="info">
+                <h2>Psicopedagogía</h2>
+                <p>La psicopedagogía es una disciplina que se encarga de estudiar y analizar los procesos de aprendizaje y enseñanza. </p>
+            </div>
+        </div>
+
+
+        <div class="profesional">
+            <img src="{{ url_for('static', filename='media/psicopedagogia.jpg') }}" alt="Profesional 1">
+            <div class="info">
+                <h2>Terapia ocupacional (integración sensorial), </h2>
+                <p>La terapia ocupacional es una disciplina de la salud que se encarga de promover la independencia y la calidad de vida de las personas a través de la realización de actividades significativas. </p>
+            </div>
+        </div>
+
+        <div class="profesional">
+            <img src="{{ url_for('static', filename='media/fonoaudiologia.jpg.') }}" alt="Profesional 1">
+            <div class="info">
+                <h2>Fonoaudiología</h2>
+                <p>La fonoaudiología es una disciplina de la salud que se encarga de prevenir, evaluar, diagnosticar y tratar los trastornos de la comunicación, el lenguaje, el habla, la voz y la deglución. </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
