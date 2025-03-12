@@ -137,6 +137,129 @@ header a:hover{
     text-decoration: underline; /* Añadir subrayado al pasar el ratón */
 }
 
+/*-------------------------------------------*/
+
+.logo-img {
+    height: 90px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 20px;
+}
+
+/* Estilos para la galería */
+
+#galeria h1{
+    font-size: 1.5em;
+}
+
+
+#galeria {
+    padding: 0px 0;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#galeria .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#galeria .gallery-item {
+    flex: 1 1 calc(100% - 20px); /* Mostrar solo una imagen por fila en versión móvil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5); /* Añadir sombra */
+    margin: 10px;
+    border-radius: 40px; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#galeria .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/*estilos para la sección de ubicación */
+
+#ubicacion {
+    padding: 20px 0; /* Reducir el padding para que no esté tan separado */
+    text-align: center;
+    background-color: #f0f0f0; /* Cambiar el color de fondo */
+}
+
+#ubicacion h2 {
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Añadir sombra solo al texto */
+}
+
+#ubicacion iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5); /* Añadir sombra */
+}
+
+
+/* Estilos para la lista de profesionales */
+#profesionales {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#profesionales .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profesionales .profesional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#profesionales .profesional img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#profesionales .profesional .info {
+    text-align: center;
+    padding: 0;
+}
+
+#profesionales .profesional .info h2 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+#profesionales .profesional .info p {
+    margin: 5px 0 0;
+    font-size: 1em;
+}
+
+#profesionales h1 {
+    font-size: 1.5em;
+}
+
 
 @media (min-width: 720px){
     header{
@@ -197,115 +320,69 @@ header a:hover{
         height: 500px;
         width: 400px;
         box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+
     
 
     }
+
+    #profesionales {
+        padding: 50px 0;
+        text-align: center;
+    }
+    
+    #profesionales .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #profesionales .profesional {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 800px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    
+    #profesionales .profesional img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 20px;
+    }
+    
+    #profesionales .profesional .info {
+        text-align: left;
+        padding: 20px;
+    }
+    
+    #profesionales .profesional .info h2 {
+        margin: 0;
+        font-size: 1.8em;
+    }
+    
+    #profesionales .profesional .info p {
+        margin: 10px 0 0;
+        font-size: 1.2em;
+    }
+
+    #profesionales h1 {
+        font-size: 3.5em;
+    }
+
+    #galeria h1{
+        font-size: 3.5em;
+    }
+
+    #galeria .gallery-item {
+        flex: 1 1 calc(40% - 20px); /* Cambiar a 50% para mostrar 2 imágenes por fila en pantallas más grandes */
+    }
+
+    #galeria {
+        padding: 50px 0;}
 }
 
-.logo-img {
-    height: 90px; /* Ajusta el tamaño según sea necesario */
-    margin-right: 20px;
-}
-
-/* Estilos para la galería */
-#galeria {
-    padding: 50px 0;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-#galeria .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-#galeria .gallery-item {
-    flex: 1 1 calc(40% - 20px); /* Cambiar a 50% para mostrar 2 imágenes por fila */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5); /* Añadir sombra */
-    margin: 10px;
-    border-radius: 40px; 
-    overflow: hidden; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#galeria .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/*estilos para la sección de ubicación */
-
-#ubicacion {
-    padding: 20px 0; /* Reducir el padding para que no esté tan separado */
-    text-align: center;
-    background-color: #f0f0f0; /* Cambiar el color de fondo */
-}
-
-#ubicacion h2 {
-    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); /* Añadir sombra solo al texto */
-}
-
-#ubicacion iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-    border: 0;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5); /* Añadir sombra */
-}
-
-
-/* Estilos para la lista de profesionales */
-#profesionales {
-    padding: 50px 0;
-    text-align: center;
-}
-
-#profesionales .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#profesionales .profesional {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    width: 100%;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #fff;
-}
-
-#profesionales .profesional img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 20px;
-}
-
-#profesionales .profesional .info {
-    text-align: left;
-    padding: 20px;
-}
-
-#profesionales .profesional .info h2 {
-    margin: 0;
-    font-size: 1.8em;
-}
-
-#profesionales .profesional .info p {
-    margin: 10px 0 0;
-    font-size: 1.2em;
-}
