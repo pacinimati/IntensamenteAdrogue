@@ -21,6 +21,10 @@ def profesionales():
 def especialidades():
     return render_template('especialidades.html')
 
+@app.route('/talleres')
+def talleres():
+    return render_template('talleres.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
 
