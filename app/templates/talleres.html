@@ -1,0 +1,56 @@
+{% extends './layout.html' %}
+
+{% block title %}Profesionales{% endblock %}
+
+{% block body %}
+<section id="profesionales">
+    <div class="container">
+        <h1>Nuestros Talleres</h1>
+
+        <div class="profesional">
+            <img src="{{ url_for('static', filename='media/edfisica.jpg') }}" alt="Profesional 1">
+            <div class="info">
+            <h2>Taller físicos lúdico recreativos adaptados con iniciación a los deportes</h2>
+            <ul>
+                <li><strong>Miércoles:</strong>
+                <ul>
+                    <li>10:00 - 11:00 (Niños de 13 a 16 años)</li>
+                    <li>11:00 - 12:00 (Niños de 9 a 12 años)</li>
+                    <li>12:00 - 13:00 (Niños de 5 a 9 años)</li>
+                    <li>13:00 - 14:00 (Niños de 5 a 9 años)</li>
+                </ul>
+                </li>
+                <li><strong>Jueves:</strong>
+                <ul>
+                    <li>16:00 - 17:00 (Niños de 9 a 12 años)</li>
+                    <li>17:00 - 18:00 (Niños de 13 a 16 años)</li>
+                    <li>18:00 - 19:00 (Niños de 5 a 9 años)</li>
+                    <li>19:00 - 20:00 (Niños de 5 a 9 años)</li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="profesional">
+            <img src="{{ url_for('static', filename='media/amigos.jpg') }}" alt="Profesional 1">
+            <div class="info">
+            <h2>Taller de habilidades sociales</h2>
+            <ul>
+                <li><strong>Lunes:</strong> 18:15 - 19:00 (Niños de 6 a 7 años)</li>
+                <li><strong>Miércoles:</strong>
+                <ul>
+                    <li>17:45 - 18:30 (Niños de 11 a 13 años)</li>
+                    <li>18:30 - 19:15 (Niños de 8 a 10 años)</li>
+                </ul>
+                </li>
+                <li><strong>Jueves:</strong> 18:15 - 19:00 (Adolescentes)</li>
+                <li><strong>Viernes:</strong> 11:45 - 12:30 (Niños de 2, 3, 4 y 5 años)</li>
+            </ul>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+{% endblock %}
