@@ -260,6 +260,52 @@ header a:hover{
     font-size: 1.5em;
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section p,
+.footer-section a {
+    margin: 5px 0;
+    color: #ccc;
+    text-decoration: none;
+    
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 0.75em;
+}
+
 
 @media (min-width: 720px){
     header{
@@ -383,6 +429,11 @@ header a:hover{
     }
 
     #galeria {
-        padding: 50px 0;}
+        padding: 50px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 1em; 
+    }
 }
 
