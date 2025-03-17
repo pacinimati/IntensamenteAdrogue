@@ -27,5 +27,31 @@
     {% block body %}
     {% endblock %}
 </body>
-
+    
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Dirección: Valentin Alsina 410, Adrogue</p>
+            <p>Teléfono: +54 9 11 22605695</p>
+            <p>Email: intensamenteadrogue@gmail.com </p>
+        </div>
+        <div class="footer-section">
+            <h4>Seguinos!</h4>
+            <a href="https://www.instagram.com/intensamenteadrogue" target="_blank">Instagram</a>
+        </div>
+        <div class="footer-section">
+            <h4>Enlaces Útiles</h4>
+            <a href="{{ url_for('home') }}">Inicio</a>
+            <a href="{{ url_for('galeria') }}">Galeria</a>
+            <a href="{{ url_for('profesionales') }}">Profesionales</a>
+            <a href="{{ url_for('especialidades') }}">Nuestras Especialidades</a>
+            <a href="{{ url_for('talleres') }}">Talleres</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Creado y diseñado por Matias Pacini. Contacto: matiaspacini052@gmail.com</p>
+    </div>
+</footer>
+    
 </html>
