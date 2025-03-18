@@ -7,19 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('#nav-menu');
+            menuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
 </head>
 
 <header>
     <div class="container">
         <img src="{{ url_for('static', filename='media/logo.jpeg') }}" alt="Logo MercadoLibreGuitar" class="logo-img">
-         <nav>
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button> <!-- Botón de menú para móvil -->
+        <nav id="nav-menu">
             <a href="{{ url_for('home') }}">Inicio</a>
             <a href="{{ url_for('galeria') }}">Galeria</a>
-            <!--<a href="{{ url_for('profesionales') }}">Profesionales</a>-->
-             <a href="{{ url_for('talleres') }}">Talleres</a>
+            <a href="{{ url_for('profesionales') }}">Profesionales</a>
             <a href="{{ url_for('especialidades') }}">Nuestras Especialidades</a>
+            <a href="{{ url_for('talleres') }}">Talleres</a>
             <a href="https://wa.me/5491122605695?text=Hola%2C%20quiero%20sacar%20un%20turno">Nuestro WhatsApp</a>
-         </nav>
+        </nav>
     </div>
 </header>
 
@@ -27,7 +41,8 @@
     {% block body %}
     {% endblock %}
 </body>
-    
+
+
 <footer>
     <div class="footer-container">
         <div class="footer-section">
@@ -52,5 +67,6 @@
         <p>&copy; Creado y diseñado por Matias Pacini. Contacto: matiaspacini052@gmail.com</p>
     </div>
 </footer>
-    
+
+
 </html>
